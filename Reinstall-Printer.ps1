@@ -1,3 +1,6 @@
+#With no arguments it will let you chose which printer to reinstall
+#Reinstall-Printer Xerox 3052 or Reinstall-Printer *erox* will work as well
+
 function Reinstall-Printer
 {
     if ($args.Length -gt 0) { $Found = Get-Printer -Name $args[0] }
@@ -18,4 +21,4 @@ function Reinstall-Printer
     Write-Host "Success! Your printer should appear in few seconds."
 }
 
-Reinstall-Printer
+#Reinstall-Printer
