@@ -1,4 +1,4 @@
-Write-Host "This script copies whole C:\Users\ without trashes. Remember to list users you DO NOT want to copy"
+Write-Host "This script copies whole C:\Users\ without trashes. Remember to list users you DO NOT want to copy. It uses smb!"
 #If you want to copy only listed users just change line 28 to "if ($user -in $NOT_wanted_profiles)"
 $source_ip = Read-Host -Prompt "Source IP address? (eg 192.168.200.1)"
 $dest_path = Read-Host -Prompt "Where to save data? (eg \\192.168.200.2\c$\Users\)"
